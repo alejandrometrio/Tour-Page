@@ -1,0 +1,71 @@
+
+  body { 
+    background: rgba(0, 0, 0, 0.8) url("../img/mdd.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+   }
+
+.qch{
+  display: grid;
+  justify-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: xx-large;
+  font-family: Anton; 
+}
+
+.j{
+    display: grid;
+    justify-items: center;
+    -webkit-text-stroke: 0.3px rgb(229, 216, 32);
+    color: transparent;
+    font-weight: 900px;
+    font-size: 80px;
+    font-family: Anton; 
+  }
+
+
+.colu{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.07 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 500px;
+    height: 260px;
+    margin-top: 3px;
+    margin-left: 320px;
+}
+
+.colu2{
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.07 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 500px;
+  height: 515px;
+  margin-top: 3px;
+  margin-left: 320px;
+  padding: 20px;
+}
+
+
+
+.contenido{
+  font-size: 150;
+  margin: 10px;
+}
+
+
+
+
+.lk{
+  display: flex;
+  justify-content: center;
+
+}

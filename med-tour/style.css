@@ -1,0 +1,60 @@
+
+  body { 
+    background: rgba(0, 0, 0, 0.5) url("../img/mdd.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+   }
+
+.qch{
+  display: grid;
+  justify-items: center;
+  font-size: xx-large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    display: grid;
+    justify-items: center;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.colu{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 350px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px ;
+}
+
+.colu2{
+  width: 500px;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  margin-left: 320px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 10px ;
+}
+
+.contenido{
+  font-size: 150;
+  margin: 10px;
+}
+
+
+
+
+.lk{
+  display: flex;
+  justify-content: center;
+
+}

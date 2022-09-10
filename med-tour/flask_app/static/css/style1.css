@@ -1,0 +1,14 @@
+#body2{
+    background: rgba(0, 0, 0, 0.7) url("../img/m3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+    height: 100%;
+
+}
+
+#headr{
+    margin-left: 40px;
+}
+

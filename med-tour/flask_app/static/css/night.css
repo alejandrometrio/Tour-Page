@@ -1,0 +1,61 @@
+.body { 
+    background: rgba(0, 0, 0, 0.8) url("../img/n.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+}
+
+.body2 { 
+    background: rgba(0, 0, 0, 0.8) url("../img/res1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+}
+
+.body3 { 
+    background: rgba(0, 0, 0, 0.8) url("../img/prensa.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+}
+
+.body4 { 
+    background: rgba(0, 0, 0, 0.8) url("../img/53.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+}
+
+.body5 { 
+    background: rgba(0, 0, 0, 0.8) url("../img/bosq.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+}
+
+.body6 { 
+    background: rgba(0, 0, 0, 0.8) url("../img/graf.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:  darken;
+    color: white;
+}
+
+.l{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: Anton; 
+}
+
+#headr{
+    margin-left: 40px;
+}

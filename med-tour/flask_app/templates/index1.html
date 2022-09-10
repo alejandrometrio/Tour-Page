@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+    <link rel="stylesheet" type="text/css" href="{{url_for ('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="form-group"><br>
+                <marquee scrollamount="16" class="j"> QUE CHIMBA MEDALLO/MEDELLÍN IS MORE THAN PABLO ESCOBAR/ IT'S COLOMBIA NOT COLUMBIA</marquee>
+                <p class="qch">Here you can find some useful information about the best places to visit in "El Valle de Aburra"</p>
+            </div>
+        </div>
+            <div class="colu">
+                <div class="contenido">
+                    
+                    {% with messages = get_flashed_messages(category_filter=['login']) %}
+                        {% if messages %}
+                            <div class="alert alert-danger">
+                                {% for message in messages %}
+                                    <p>{{message}}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% endwith %}
+                    <form action="/login" method="post">
+                        <div class="form-group">
+                            <label for="email2">E-mail</label>
+                            <input type="text" name="email" id="email2" placeholder="Write your email address" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Password</label>
+                            <input type="password" name="password" id="password2" placeholder="Write your password" class="form-control">
+                        </div><br>
+                        <div class="lk">
+                        <input type="submit" value="Log In"  class="btn btn-secondary">
+                        </div><br>
+                    </form>
+                <div class="lk">
+                    <a href="/createaccount">Aren't you registered? Create an account here</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

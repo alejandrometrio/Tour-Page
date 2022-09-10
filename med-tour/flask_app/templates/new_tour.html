@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Place</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for ('static',filename='css/style_new.css')}}">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/dashboard" id="headr" id="headr">Que Chimba Medallo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/dashboard">Go back</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Log Out</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        <!-- MENSAJES DE FLASH-->
+        {% with messages = get_flashed_messages(category_filter=['revista']) %}
+            {% if messages %}
+                <div class="alert alert-danger">
+                    {% for message in messages %}
+                        <p>{{message}}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+    
+        <h1 class="h1">Add a New Place</h1>
+        <div id="colu2">
+        <form action="/create/tour" method="post" enctype="multipart/form-data" class="elform">
+            <input type="hidden" name="user_id" value="{{user.id}}">
+            <div class="form-group">
+                <label for="place_name">Place Name</label>
+                <input type="text" id="place_name" name="place_name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select name='category' class="form-control">
+                    <option value='Restaurants'>Restaurants</option>
+                    <option value='Night Clubs'>Night Clubs</option>
+                    <option value='CaffeeShop'>Caffee Shop</option>
+                    <option value='MuseumsandTheaters'>Museums & Theaters</option>
+                    <option value='Nature'>Nature</option>
+                    <option value='Others'>Others</option>
+                </select>
+            <div class="form-group">
+                <label for="price_range">Price Range</label>
+                <select name='price_range' class="form-control">
+                    <option value='Up to 100 usd per person'>Up to 100 usd per person</option>
+                    <option value='Up to 500 usd per person'>Up to 500 usd per person</option>
+                    <option value='More than 500 usd per person'>More than 500 usd per person</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="schedule">Schedule</label>
+                <input type="text" class="form-control" id="schedule" name="schedule">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <select name='location' class="form-control">
+                    <option value='Poblado'>Poblado</option>
+                    <option value='Laureles'>Laureles</option>
+                    <option value='El Centro'>El Centro</option>
+                    <option value='Santa Elena'>Santa Elena</option>
+                    <option value='North'>North</option>
+                    <option value='South'>South</option>
+                    <option value='Others'>Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" name="description"></textarea>
+            </div><br>
+            <div class="form-group">
+                <label for="reference_place">Place of Reference</label>
+                <textarea class="form-control" id="reference_place" name="reference_place"></textarea>
+            </div><br>
+
+
+            <input id="btnadd" type="submit" class="btn btn-light" value="Add Place">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
